@@ -1,7 +1,7 @@
 import React from 'react'
-import ReactTypingEffect from 'react-typing-effect';
+import { TypeAnimation} from 'react-type-animation';
 import Tilt from 'react-parallax-tilt';
-import profileImage from '../../assets/photo.jpg';
+import profileImage from '../../assets/photo.png';
 
 const About = () => {
   return (
@@ -23,19 +23,19 @@ const About = () => {
           {/* Skills Heading with Typing Effect */}
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
             <span className="text-white">I am a </span>
-            <ReactTypingEffect
-              text={[
-                'Frontend Developer',
-                'React JS Developer',
-                'Coder',
+            
+            <TypeAnimation
+            
+              sequence={[
+                'Frontend Developer',1000,
+                'React JS Developer',1000,
+                'Coder',1000,
               ]}
-              speed={100}
-              eraseSpeed={50}
-              typingDelay={500}
-              eraseDelay={2000}
-              cursorRenderer={(cursor) => (
-                <span className="text-[#8245ec]">{cursor}</span>
-              )}
+              speed={70}
+              deletionspeed={80}
+              repeat={Infinity}
+              cursor={true}
+              className='text-[#8245ec'
             />
           </h3>
           {/* About Me */}

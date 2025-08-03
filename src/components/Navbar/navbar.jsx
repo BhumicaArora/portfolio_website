@@ -40,12 +40,12 @@ const Navbar=()=>{
         <div className="text-white py-5 flex justify-between items-center">
 
           {/* Logo */}
-          <div className="text-lg font-semibold cursor-pointer">
+          <div className="text-2xl font-semibold cursor-pointer">
             <span className="text-white">Bhumica Arora</span>
         </div>
 
         {/*Desktop menu*/}
-        <ul className="hidden md.flex space-x-8 text-gray-300">
+        <ul className="hidden md:flex space-x-8 text-gray-300">
           {/*map is used to access all menuitems together*/}
           {menuItems.map((item)=>(            
           //key is used for unique identification
