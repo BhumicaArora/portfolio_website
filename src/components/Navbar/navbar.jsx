@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import {FiMenu, FiX} from 'react-icons/fi';
 import {FaGithub} from 'react-icons/fa';
 import {SiLeetcode} from 'react-icons/si';
+import { FaLinkedin } from "react-icons/fa";
 
 const Navbar=()=>{
   //for responsive toggle menu  
@@ -23,14 +24,19 @@ const Navbar=()=>{
   const handleMenuItemClick=(sectionId)=>{
     setActiveSection(sectionId);  //as soon as we click on any particular section our navbar should get closed
     setIsOpen(false);
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
   }
-
+};
   const menuItems=[
     //if we click on any menuitem we will directly redirect to that particular section
     {id:"about",label:"About"},     
-    {id:"Education",label:"Education"},
     {id:"skills",label:"Skills"},
-    {id:"projects",label:"Projects"}
+    {id:"education",label:"Education"},
+    {id:"projects",label:"Projects"},
+    {id:"experience", label:"Experience"},
+    {id:"contact",label:"Contact"}
   ]
 
     return(
@@ -40,7 +46,7 @@ const Navbar=()=>{
         <div className="text-white py-5 flex justify-between items-center">
 
           {/* Logo */}
-          <div className="text-2xl font-semibold cursor-pointer">
+          <div className="text-2xl font-semibold cursor-pointer px-2 py-5">
             <span className="text-white">Bhumica Arora</span>
         </div>
 
@@ -60,7 +66,7 @@ const Navbar=()=>{
         </ul>
 
         {/*social icons*/}
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden md:flex space-x-5">
           <a
           href="https://github.com/BhumicaArora"
           target="_blank" //link open on new page
@@ -76,6 +82,14 @@ const Navbar=()=>{
           className="text-gray-300 hover:text-[#8245ec]"
           >
             <SiLeetcode size={24}/>
+          </a>
+          <a
+          href="https://www.linkedin.com/in/bhumica-arora-903b93290/"
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-gray-300 hover:text-[#8245ec]"
+          >
+            <FaLinkedin size={24}/>
           </a>
         </div>
 
@@ -125,6 +139,14 @@ const Navbar=()=>{
                 className="text-gray-300 hover:text-white"
               >
                 <SiLeetcode size={24} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/bhumica-arora-903b93290/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white"
+              >
+                <FaLinkedin size={24} />
               </a>
             </div>
           </ul>

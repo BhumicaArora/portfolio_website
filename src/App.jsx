@@ -1,10 +1,10 @@
 import React from "react"
 import Navbar from "./components/navbar/navbar"
-import About from "./components/about/about"
+import About from "./components/About/About"
 import Contact from "./components/Contact/Contact"
 import Footer from "./components/Footer/Footer"
-import Skills from "./components/Skills/Skills"
-import Education from "./components/Education/Education"
+import Skills from "./components/skills/skills"
+import EducationSection from "./components/Education/Education"
 import Projects from "./components/Projects/Projects"
 
 const App=()=> {
@@ -16,7 +16,7 @@ const App=()=> {
         <Navbar />
         <About />
         <Skills />
-        <Education />
+        <EducationSection />
         <Contact />
         <Footer />
         <Projects/>

@@ -38,11 +38,11 @@ export const SkillsInfo = [
   {
     title: 'Backend',
     skills: [
-      { name: 'Springboot', logo: springbootLogo },
       { name: 'Node JS', logo: nodejsLogo },
       { name: 'Express JS', logo: expressjsLogo },
       { name: 'MySQL', logo: mysqlLogo },
       { name: 'MongoDB', logo: mongodbLogo },
+      { name: 'Springboot', logo: springbootLogo },
     ],
   },
   {
@@ -128,7 +128,7 @@ export const SkillsInfo = [
       school: "ABES Engineering College,Ghaziabad",
       date: "Nov 2022 - July 2026",
       grade: "8.13 CGPA",
-      desc: "I am pursuing my Bachelor's degree (B.Tech) in Computer Science and Engineering(CSE-AIML) from ABES Engineering College, Ghaziabad. During this time, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures and Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge and helps me in shaping my technical abilities and professional growth.",
+      desc: "I am pursuing my Bachelor's degree (B.Tech) in Computer Science and Engineering(CSE-AIML) from ABES Engineering College, Ghaziabad. During this time, I gained a strong foundation in programming, software development, and computer science principles.",
       degree: "Bachelor of Technology - B.Tech",
     },
     {
@@ -138,7 +138,7 @@ export const SkillsInfo = [
       date: "2021-2022",
       grade: "76.2%",
       desc: "I completed my class 12 education from Holy Angels' Convent School, Muzaffarnagar, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
-      degree: "CBSE(XII) - PCM with Computer Science",
+      degree: "CBSE(XII)- PCM with Computer Science",
     },
     {
       id: 2,
@@ -147,7 +147,7 @@ export const SkillsInfo = [
       date: "2019-2020",
       grade: "90.4%",
       desc: "I completed my class 10 education from Holy Angels' Convent School, Muzaffarnagar, under the CBSE board, where I studied Science with Computer.",
-      degree: "CBSE(X), Science with Computer Application",
+      degree: "CBSE(X)- Science with Computer Application",
     },
   ];
   
