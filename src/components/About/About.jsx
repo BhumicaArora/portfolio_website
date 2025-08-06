@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section
     id='about'
-    className="scroll-mt-20 py-24 px-[10vw] md:px-[10vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32"
+    className="scroll-mt-48 py-22 px-[10vw] md:px-[10vw] lg:px-[20vw] font-sans mt-32 md:mt-40 lg:mt-48"
     >
       <div className="flex flex-col-reverse md:flex-row justify-between items-center">
 
@@ -53,7 +53,7 @@ const About = () => {
 
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/1ioyPymeGjBHC9zf-6Z8pWVrs8w3mLGki/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1uNJOzTI7Jm1f9nP8FhlVOSpauU8GeDwY/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"

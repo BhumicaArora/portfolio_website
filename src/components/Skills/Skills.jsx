@@ -3,7 +3,7 @@ import { SkillsInfo } from '../../constants';
 const skills = () => {
   return (
     <section id='skills'
-    className='scroll-mt-20 pt-24 pb-5 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient clip-path-custom'>
+    className='scroll-mt-8 pt-24 pb-2 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient clip-path-custom'>
 
       {/*Section Title*/}
       <div className='text-center mb-8'>
